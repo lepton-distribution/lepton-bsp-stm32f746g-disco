@@ -1,6 +1,6 @@
 /*
  * Configuration applicative de la carte STM32F746G-DISCO (étape 6). Les axes (micro-noyau, cœur,
- * puce STM32F746xx, nom uname) sont posés par CMake (cmake/kal, cmake/cpu, cmake/boards), pas ici.
+ * puce STM32F746xx, nom uname) sont posés par CMake (cmake/kal, cmake/cpu, BSP stm32f746g-disco), pas ici.
  */
 #ifndef _USER_KERNEL_MKCONF_H_
 #define _USER_KERNEL_MKCONF_H_

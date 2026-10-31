@@ -24,6 +24,6 @@
 #define USE_IF_ETHERNET
 
 //configuration de la carte (fréquences, priorités)
-#include "kernel/dev/bsp/stm32f746g_disco/stm32f746g_disco.h"
+#include "kernel/dev/bsp/stm32f746g-disco/stm32f746g_disco.h"
 
 #endif

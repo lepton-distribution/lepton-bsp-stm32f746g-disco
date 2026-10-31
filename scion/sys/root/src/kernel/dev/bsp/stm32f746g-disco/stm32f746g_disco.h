@@ -2,7 +2,7 @@
  * Lepton — BSP de la carte STM32F746G-DISCO (STM32F746NG, Cortex-M7 r0p1, étape 6).
  * Licence : voir LICENSE (MPL 1.1).
  *
- * Seul endroit (avec cmake/boards et ld/mem_stm32f746g-disco.ld) où figurent fréquences et
+ * Seul endroit (avec lepton-greffon.json et ld/mem_stm32f746g-disco.ld) où figurent fréquences et
  * réglages de la carte. Références : STM32CubeF7 v1.17.4 (Projects/STM32746G-Discovery/Templates :
  * SystemClock_Config ; BSP 32f746gdiscovery : COM1), RM0385. Inclus par user_kernel_mkconf.h :
  * aucun en-tête ST ici (inclus par kernelconf.h dans tout le noyau).

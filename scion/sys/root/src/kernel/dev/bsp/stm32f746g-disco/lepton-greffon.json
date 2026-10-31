@@ -1,0 +1,33 @@
+{
+  "nom": "stm32f746g-disco",
+  "type": "bsp",
+  "version": "1.0.0",
+  "description": "Carte STM32F746G-DISCO (STM32F746NG, Cortex-M7 r0p1, FPU simple précision) : HSE 25 MHz, PLL 216 MHz, caches ; USART1 console ttys1 (ST-LINK), Ethernet RMII + PHY LAN8742A eth0 (lwIP).",
+  "destination": "kernel/dev/bsp/stm32f746g-disco",
+  "bibliotheque": "bsp",
+  "famille": "stm32f7xx",
+  "coeur": "cortex-m7",
+  "mcu": "STM32F746NG",
+  "frequence_cpu": 216000000,
+  "entete_config_noyau": "include/user_kernel_mkconf.h",
+  "script_liens": "ld/mem_stm32f746g-disco.ld",
+  "demarrage": [
+    "stm32f746g_disco_board.c"
+  ],
+  "openocd": [
+    "debug/openocd-stm32f746g-disco.cfg"
+  ],
+  "sonde": "stlink",
+  "compilation": {
+    "publique": {
+      "definitions": [
+        "STM32F746xx",
+        "HSE_VALUE=25000000",
+        "USE_ERRATUM_837070=1"
+      ],
+      "inclusions": [
+        "kernel/dev/bsp/stm32f746g-disco"
+      ]
+    }
+  }
+}

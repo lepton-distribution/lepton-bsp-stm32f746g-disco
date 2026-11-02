@@ -18,6 +18,9 @@
     "debug/openocd-stm32f746g-disco.cfg"
   ],
   "sonde": "stlink",
+  "svd": {
+    "famille": "svd/STM32F746.svd"
+  },
   "compilation": {
     "publique": {
       "definitions": [
